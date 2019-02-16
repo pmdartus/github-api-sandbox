@@ -1,0 +1,11 @@
+{
+  "name": "github-api-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pierre-Marie Dartus <p.dartus@salesforce.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "graphql-request": "^1.8.2"
+  }
+}
