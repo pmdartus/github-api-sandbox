@@ -6,9 +6,9 @@ const mutations = require('./mutations');
 const { createGithubClient } = require('./utils');
 
 async function main() {
-    const client = createGithubClient();
+    const client = await createGithubClient();
 
-    const res = await client.request(mutations.minimizeComment);
+    const res = await client.request(mutations.createCheckRun);
 
     console.dir(res, {
         depth: 10

@@ -1,4 +1,4 @@
-const { gql } = require('../utils');
+const { gql } = require('./utils');
 
 const addComment = gql`
     mutation {
@@ -31,7 +31,26 @@ const minimizeComment = gql`
     }
 `;
 
+const createCheckRun = gql`
+    mutation {
+        createCheckRun(
+            input: {
+                name: "Test check"
+                headSha: "70ca309caa7f112ddf877df56ef228b02bb9c1d8",
+                repositoryId: "MDEwOlJlcG9zaXRvcnkxNzA5NjgzMjU=",
+            }
+        ) {
+            checkRun {
+                id,
+                status,
+                name,
+            }
+        }
+    }
+`;
+
 module.exports = {
     addComment,
-    minimizeComment
+    minimizeComment,
+    createCheckRun
 };
