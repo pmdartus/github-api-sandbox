@@ -1,4 +1,4 @@
-const { gql } = require('./utils');
+const { gql } = require('../utils');
 
 const addComment = gql`
     mutation {
