@@ -1,3 +1,7 @@
 #!/bin/sh -l
 
-sh -c "echo 'Test checks'"
+set -e
+
+npm install
+
+NODE_PATH=node_modules node /run.js
