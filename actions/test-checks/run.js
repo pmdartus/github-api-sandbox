@@ -9,6 +9,8 @@ const {
 } = repository;
 const { name: repo } = repository;
 
+const checkName = 'My check';
+
 const headers = {
     'Content-Type': 'application/json',
     Accept: 'application/vnd.github.antiope-preview+json',
