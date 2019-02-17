@@ -24,7 +24,7 @@ async function createCheck() {
         head_sha: GITHUB_SHA,
         status: 'completed',
         started_at: new Date(),
-        completed_at: new Date() + 1000,
+        completed_at: new Date(),
         conclusion: 'success',
         output: {
             title: 'Test checks',
