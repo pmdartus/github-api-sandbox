@@ -1,6 +1,6 @@
 workflow "My Action" {
   on = "push"
-  resolves = ["Hello world"]
+  resolves = ["Hello world", "Test checks"]
 }
 
 action "Hello world" {
@@ -11,4 +11,8 @@ action "Hello world" {
   }
 
   args = "\"Hello world, I'm $MY_NAME!\""
+}
+
+action "Test checks" {
+    uses = "./actions/test-checks"
 }
