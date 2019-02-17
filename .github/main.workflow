@@ -15,4 +15,5 @@ action "Hello world" {
 
 action "Test checks" {
     uses = "./actions/test-checks"
+    secrets = ["GITHUB_TOKEN"]
 }
