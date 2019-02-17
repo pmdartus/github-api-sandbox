@@ -52,6 +52,9 @@ async function run() {
 
 function exitWithError(err) {
     console.error('Error', err.stack);
+    if (err.response) {
+        console.error(err.response);
+    }
     if (err.data) {
         console.error(err.data);
     }
